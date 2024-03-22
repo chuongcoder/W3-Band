@@ -1,0 +1,583 @@
+/* reset css  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* class su dung chung  */
+.text-white {
+    color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    padding: 11px 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.pull-right {
+    float: right;
+}
+
+#main {}
+
+
+/* Header  */
+#header {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 46px;
+    background-color: #000;
+}
+
+#nav,
+.Subnav {
+    list-style-type: none;
+}
+
+/* inline-block: + ko ke thua chieu ngang cua the chua no -> khoi block chi bao phan content cua no */
+/* block: khoi bao het tag chua no  */
+#nav>li {
+    /* t/c the inline-block -> ko ke thua width cua tag chua no  */
+    /* de cac tag li of header thanh 1 hang ngang  */
+    display: inline-block;
+}
+ 
+
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    /* vi the a ko set height,width neu khong co block (mac dinh la tag inline -> width,height : auto) */
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .Subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .Subnav {
+    /* li -> goc Oxy  */
+    display: none;
+    position: absolute;
+    /* y(top) : height tag chua no (y=-46px) */
+    top: 100%;
+    min-width: 160px;
+    /* box-shadow: x y blur spread color; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+#nav .Subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav li:hover .Subnav {
+    display: block;
+}
+
+
+/* icon */
+#nav {
+    display: inline-block;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+/* t/c the div -> auto ke thua chieu ngang tag chua no 
+-> div search chiem het chieu ngang -> troi xuong  */
+#header .mobile-menu-btn{
+    /* dua nut menu vao goc ( do bi day vang ra khoi header(ul(nav) da chiem het)) */
+    position:absolute;
+    top: 0;
+    right: 0;
+    display:none;
+    padding: 0 21px;
+}
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .mobile-menu-btn:hover {
+    background-color:#ccc;  
+}
+/* hover tren mobile = bam vao  */
+#header .mobile-menu-btn:hover .menu-icon {
+    color:#000;  
+}
+
+/* cho tag li dau tien (HOME) -> inline-block :div chi bao phan noi dung cua no -> tab vao : ko anh huong */
+#nav > li:first-child {
+    display:inline-block;
+}
+
+#header .search-icon,
+#header .menu-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+
+/* Slider  */
+#slider {
+    position: relative;
+    margin-top: 46px;
+    /* width = 1/2 height  */
+    padding-top: 50%;
+    background: url('../img/slider/chicago.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    text-align: center;
+
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+    text-shadow: 0 0 1px #000;
+}
+
+
+/* Band-section  */
+#content .content-section {
+    width: 800px;
+    /* ipad  */
+    max-width:100%;
+    padding: 64px 0 112px;
+    margin-right: auto;
+    margin-left: auto;
+    /* ipad  */ 
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4PX;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+
+/* Member  */
+#content .member-list {
+    margin-top: 32px;
+}
+
+/* #content .member-item{
+    float:left;
+    width:33.3333%;
+    text-align:center;
+} */
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-image {
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 154px;
+}
+
+/* Tour-section  */
+.tour-section {
+    background-color: #000;
+}
+
+.tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+
+}
+
+.tickets-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style: none;
+}
+
+.sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.quantity {
+    /* the li -> inline , co float -> the div -> set margin < 0(ok) */
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: #fff;
+    /* can giua theo chiu ngang  */
+    text-align: center;
+    /* can giua theo chieu doc line-height = width */
+    line-height: 24px;
+    background-color: #000;
+    margin-top: -3px;
+}
+
+
+/* Places  */
+/* float -> dc sd margin am  */
+/* giua tag inline(h2,img,..) va div co 1 khoang cach -> display : block cho tag do -> xoa khoang cach  */
+
+.places-list {
+    margin-top: 16px;
+}
+
+.place-image {
+    width: 100%;
+    display: block;
+}
+
+.place-body {
+    font-size: 15px;
+    background-color: #fff;
+    padding: 16px;
+}
+
+.place-image:hover {
+    opacity: 0.6;
+}
+
+.place-heading {
+    font-weight: 550;
+    font-size:16px;
+}
+
+.place-time {
+    margin-top: 20px;
+}
+
+.place-des {
+    margin-top: 20px;
+}
+
+
+/* contact  */
+.contact-content {
+    margin-top: 48px;
+}
+.contact-info-anchol {
+    color:blue;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+
+
+/* map section */
+
+.map-section img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copy-right a:hover,
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copy-right {
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 15px;
+}
+
+#footer .copy-right a {
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+
+
+
+
+/* modal  */
+.open{
+    display:flex !important; 
+}
+.modal {
+    /* width va height phu kin man hinh   */
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display:none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    /* khi co man hinh lai moi ben ho 16px  */
+    max-width: calc(100%-32px);
+    /* khi add content -> height auto tang  */
+    min-height: 200px;
+    position: relative;
+    animation: modaFadein ease 0.5s
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.modal-close:hover {
+    opacity: 1;
+    background:linear-gradient(to left,green,orange);
+    color: lightseagreen;
+    transition:all linear .3s;
+}
+.modal-header {
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-heading-icon {
+    margin-right: 16px;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    /* moi khoi se nam tren 1 hang  */
+    display: block;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+    outline: none;
+}
+
+#pay-btn {
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+}
+
+#pay-btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    background:linear-gradient(to left,red,green);
+    color: lightgreen;
+    transition:all linear .3s;
+}
+
+.modal-footer {
+    display:flex;
+    justify-content:space-between;
+    padding: 16px;
+    text-align: right;
+}
+.modal-footer .btn-footer{
+    background-color:#f44336;
+    color:#fff;
+    padding:10px;
+    border-radius:3px;
+    border:1px solid #ddd;
+}
+.modal-footer .btn-footer:hover{
+    background: linear-gradient(to right,red,green);
+    color:lightseagreen;
+    cursor:pointer;
+    opacity:0.6;
+    transition:all linear .3s;
+}
+.modal-footer a {
+    color: #009688;
+}
+
+@keyframes modaFadein {
+    from {
+        opacity: 0;
+        transform: translateY(-190px);
+    }
+
+    to {
+        opacity: 1; 
+        /* 0: vi tri ban dau  */
+        transform: translateY(0);
+    }
+}

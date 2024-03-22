@@ -1,0 +1,97 @@
+/* PC  */
+@media (min-width: 1024px){
+.contact-info-anchol:hover{
+    color:green;
+}
+
+}
+/* Tablet vs mobile  */
+@media (max-width:1023px) {
+    .btn{
+        padding:15px 16px;
+    }
+    .contact-form .form-control {
+        padding:15px;       
+    }
+    #footer .social-list a{
+        font-size: 48px;
+        margin:0 8px;
+    }
+    #footer .copy-right {
+        padding: 12px 0;
+        font-size: 31px;
+    }
+    .contact-info {
+        font-size: 18px;
+        line-height: 2;
+    }
+}
+
+/* Tablet  */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+/* Mobile  */
+@media (max-width: 739px) {
+    #nav > li {
+        /* hien thi tren tung dong  */
+        display:block;
+    }
+    /* chi cho the con li dau tien -> inline-block */ 
+    #nav > li:first-child {
+        display:inline-block;
+    }
+    /* hien menu con cua More  */
+    #nav .Subnav{
+        /* xoa absolute  */
+        position:initial;
+        background-color:#333;
+    }
+    /* cho chieu doc day them 1 px de tuong tac  */
+    #nav li a {
+        padding : 1px 24px;
+    }
+    /* chu mau trag li trong More */
+    #nav .Subnav a {
+        color:#fff;
+        /* chieu doc (42 - 48px) -> ngon tay de tuong tac    */
+        padding:5px 41px;
+    }
+    /* bam vao anchol ngoai pham vi van chap nhan -> ul cha anchol block  */
+    #nav {
+        display:block;
+    }
+    /* an menu   */
+    #header {
+        overflow:hidden;
+    }
+    /* hien nut menu tren mobile  */
+    #header .mobile-menu-btn{
+        display:block;
+    }
+    /* an nut search tren mobile  */
+    #header .search-btn{
+        display:none;
+    }
+    /* fix place vs image */
+    /* mt-16 -> mgt 32 -> du 48 px cho member-list  */
+    #content .member-image{
+        width:60%;
+    }
+    /* phan biet element cot va ko phai cot  */
+    .s-col-ful,
+    .s-full-width {
+        width:100% !important;
+    }
+    /* fix contact  */
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+    .contact-form{
+        margin-top: 32px;
+    }
+  
+
+ 
+    
+}

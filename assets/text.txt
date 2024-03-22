@@ -1,0 +1,497 @@
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/W3_Band/assets/css/style2.css">
+    <link rel="stylesheet" href="/W3_Band/assets/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Band</a></li>
+                <li><a href="">Tour</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">More <i class="set-icon-down ti-angle-down"></i> </a>
+                    <ul class="subnav">
+                        <li><a href="">Merchandise</a></li>
+                        <li><a href="">Extras</a></li>
+                        <li><a href="">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search-icon">
+                <i class="set-icon-search ti-search"></i>
+            </div>
+        </div>
+        <div id="slider">
+            <div class="content-slider">
+                <h2 class="heading-slider">
+                    Chicago
+                </h2>
+                <div class="des-slider">
+                    Thank you, Chicago - A night we won't forget
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- band section  -->
+            <div class="content-section">
+                <h2 class="heading-section">THE BAND</h2>
+                <p class="des-section">We love music</p>
+                <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+                <div class="member-list">
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="/W3_Band/assets/img/member/bandmember.jpg" alt="member-img" class="member-image">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="/W3_Band/assets/img/member/bandmember.jpg" alt="member-img" class="member-image">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="/W3_Band/assets/img/member/bandmember.jpg" alt="member-img" class="member-image">
+                    </div>
+                </div>
+            </div>
+            <!-- tour section  -->
+            <div class="tour-section">
+                <div class="content-section">
+                    <h2 class="heading-section text-white">TOUR DATES</h2>
+                    <p class="des-section text-white">Remember to book your tickets !</p>
+                    <ul class="ticket-list">
+                        <li class="ticket-item">September<span class="sold-out">sold-out</span></li>
+                        <li class="ticket-item">October<span class="sold-out">sold-out</span></li>
+                        <li class="ticket-item">November<span class="quantity">3</span></li>
+                    </ul>
+                    <div class="places-list">
+                        <div class="place-item">
+                            <img src="/W3_Band/assets/img/places/newyork.jpg" alt="Newyork" class="place-image">
+                            <div class="body-place">
+                                <h3 class="heading-place">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="sub-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-btn">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-item">
+                            <img src="/W3_Band/assets/img/places/paris.jpg" alt="Newyork" class="place-image">
+                            <div class="body-place">
+                                <h3 class="heading-place">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="sub-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-btn">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-item">
+                            <img src="/W3_Band/assets/img/places/sanfran.jpg" alt="Newyork" class="place-image">
+                            <div class="body-place">
+                                <h3 class="heading-place">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="sub-place">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-btn">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- contac-section  -->
+            <div class="content-section">
+                <h2 class="heading-section">CONTACT</h2>
+                <p class="des-section">Fan? Drop a note</p>
+                <div class="contact-content-list">
+                    <div class="contact-item">
+                        <p class="text-item"> <i class=" ti-location-pin"></i> Chicago</p>
+                        <p class="text-item"> <i class=" ti-mobile"></i> Phone: ++00 151515</p>
+                        <p class="text-item"> <i class=" ti-email"></i> Email:mail@gmail.com </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="form1">
+                            <div class="form-half">
+                                <input type="text" placeholder="Name" class="form-control" required="">
+                            </div>
+                            <div class="form-half">
+                                <input type="email" placeholder="Email" class="form-control" required="">
+                            </div>
+                        </div>
+                        <div class="form2">
+                            <div class="full-form">
+                                <input type="text" placeholder="Message" class="form-control" required="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send-icon">
+                    <input type="submit" value="SEND" class="set-send">
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <img src="/W3_Band/assets/img/Map/map.jpg" alt="map">
+        </div>
+
+        <div id="footer">
+            <div class="icon">
+                <a href="#"><i class="ti-youtube"></i></a>
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+            </div>
+            <p class="des-footer">Power by <a href="" class="anchol-footer">W3 school </a></p>
+        </div>
+    </div>
+</body>
+
+</html> -->
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+html {
+    font-family:Arial, Helvetica, sans-serif
+}
+.text-white{
+    color:#fff;
+}
+#main {
+
+}
+#header {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:46px;
+    background-color:#000;  
+    z-index:1;  
+}
+#nav > li > a{
+    text-transform:uppercase;   
+}
+#nav > li {
+    display:inline-block;
+}
+#nav li {
+    position:relative;
+}
+#nav .subnav{
+    position:absolute;
+    display:none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#nav li:hover   .subnav{
+    display:block;
+}
+#nav,
+.subnav {
+    list-style-type: none;
+}
+#nav .subnav a {
+    color:#000;
+    min-width: 160px;
+    line-height:36px;
+}
+#nav li a {
+    color:#fff;
+    text-decoration:none;
+    padding:0 24px;
+    line-height:46px;
+    display:block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color:#000;
+    background-color:#ccc;
+}
+
+/* icon  */
+.set-icon-down {
+    font-size:12px;
+}
+#nav {
+    display:inline-block;
+}
+.search-icon{
+    float:right;
+    line-height:46px;
+    padding:0 16px;
+}
+.search-icon:hover {
+    background-color:red;
+    cursor:pointer; 
+}
+.set-icon-search {
+    color:#fff;
+}
+
+#slider {
+    position:relative;
+    margin-top: 46px;
+    background: url('/W3_Band/assets/img/slider/chicago.jpg') top center / cover no-repeat;
+    padding-top:50%;
+}
+#slider .content-slider {
+    position:absolute;
+    bottom:47px;
+    text-align: center;
+    color:#fff;
+    width: 100%;
+}
+#slider .heading-slider {
+    font-weight:500;
+    font-size:30px;
+}
+#slider .des-slider {
+    font-size:15px;
+    margin-top: 20px;
+}
+#content {
+
+}
+#content .content-section {
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 112px;
+}
+#content .heading-section {
+    font-size:30px;
+    letter-spacing:4px;
+    font-weight:500;
+    text-align:center;
+}
+#content .des-section {
+    margin-top: 25px;
+    opacity:0.6;
+    text-align:center;
+    font-style:italic;
+
+}
+#content .about-text {
+    margin-top: 25px;
+    line-height:1.4;
+    text-align:justify;
+    font-size:15px;
+}
+#content .member-list {
+    overflow:hidden;
+    margin-top: 45px;
+    margin-left:-8px;
+    margin-right:-8px;
+}
+#content .member-item {
+    text-align: center;
+    float: left;
+    width: calc(100%/3);
+    padding-left:8px;
+    padding-right:8px;
+}
+#content .member-name {
+    font-size:15px;
+}
+#content .member-image {
+    margin-top: 15px;
+    border-radius:4px;
+    width: 154px;
+}
+#content .tour-section{
+    background-color: #000;
+}
+#content .ticket-list {
+    margin-top: 25px;
+    background-color: #fff;
+    color:#000;
+}
+#content .ticket-item{
+    border:1px solid #ddd;
+    padding:11px 16px;
+    color:#757575;
+    list-style-type:none;
+}
+#content .sold-out {
+    background-color: red;
+    color:#fff; 
+    padding:3px 4px;
+    margin-left: 20px;
+}
+#content .quantity{
+    background-color:#000;
+    color:#fff;
+    border-radius:50%;
+    width: 24px;
+    height:24px;
+    float:right;
+    text-align: center;
+    line-height:24px;
+    margin-top:-3px;
+}
+/* place  */
+#content .places-list {
+    margin-top: 35px;
+    margin-left: -8px;
+    margin-right:-8px;
+    overflow:hidden;
+}
+#content .place-item{
+    float:left;
+    width:calc(100%/3);
+    padding: 0 8px;
+}
+#content .place-image{
+    width:255px;
+    display: block;
+}
+#content .place-image:hover {
+    opacity:0.6;
+}
+#content .body-place{
+    background-color: #fff;
+    padding:11px 16px;
+}
+#content .heading-place{
+    font-weight:600;
+    font-size:18px;
+}
+#content .place-time{
+    margin-top: 20px;
+}
+#content .sub-place{
+    margin-top: 20px;
+}
+#content .place-btn{
+    margin-top: 20px;
+    background-color: #000;
+    color:#fff;
+    padding:12px 11px;
+    border-radius:3px;
+    border: none;
+    font-size:14px;
+}
+#content .place-btn:hover {
+    background-color: #ccc;
+    color:#000;
+    cursor:pointer;
+}
+ /* contact  */
+#content .contact-content-list{
+    margin-top: 47px;
+    overflow: hidden;
+}
+#content .contact-item{
+    float:left;
+    width: 50%;
+    padding:0 8px;
+}
+#content .text-item {
+    font-size:18px;
+    line-height:24px;
+}
+#content .contact-item i[class*="ti-"] {
+    width:30px;
+    display: inline-block;
+}
+#content .input-half{
+    float:left;
+    width: 50%;
+}
+#content .form1{
+    overflow: hidden;
+}
+#content .form-half{
+    float:left;
+    width: 50%;
+}
+#content .form-control{
+    width: 100%;
+    padding:10px;
+    border:1px solid #ccc;
+}
+#content .full-form{
+    margin-top: 8px;
+}
+#content .form-half{
+    padding:0 8px;
+}
+
+#content .form1{
+    margin-left:-8px;
+    margin-right:-8px;
+}
+
+#content .send-icon{
+    display:inline-block;
+    float:right;
+    margin-top:16px;
+    padding:0 8px;
+}
+#content .set-send{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius:3px;
+    padding:11px 16px;
+}
+#content .set-send:hover {
+    background-color:#ccc;
+    color:#000;
+    cursor:pointer;
+}
+.map img{
+    width: 100%;
+}
+#footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+}
+#footer .icon a {
+    color:rgba(0,0,0,0.6);
+    text-decoration: none;
+    font-size:30px;
+    opacity:0.6;
+}
+#footer .des-footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:rgba(0,0,0,0.6);
+}
+#footer .anchol-footer{
+    color:rgba(0,0,0,0.6);
+    font-size:16px;
+}
+
+#footer .anchol-footer:hover,
+#footer .icon a:hover {
+    color:rgba(0,0,0,0.8);
+}
