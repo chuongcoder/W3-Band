@@ -33,13 +33,16 @@
 }
 /* Mobile  */
 @media (max-width: 739px) {
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
     #nav > li {
         /* hien thi tren tung dong  */
         display:block;
     }
-    /* chi cho the con li dau tien -> inline-block */ 
+    /* chi cho the con li dau tien [Home] -> inline-block */ 
     #nav > li:first-child {
-        display:inline-block;
+        display:inline-block; 
     }
     /* hien menu con cua More  */
     #nav .Subnav{
@@ -48,7 +51,7 @@
         background-color:#333;
     }
     /* cho chieu doc day them 1 px de tuong tac  */
-    #nav li a {
+    #nav li a { 
         padding : 1px 24px;
     }
     /* chu mau trag li trong More */
@@ -78,8 +81,14 @@
     #content .member-image{
         width:60%;
     }
+
+    .member-list .member-item {
+        margin-top: 30px;
+        width: 100%;
+    }
+
     /* phan biet element cot va ko phai cot  */
-    .s-col-ful,
+    .s-col-full,
     .s-full-width {
         width:100% !important;
     }

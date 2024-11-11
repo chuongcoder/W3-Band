@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* padding va border ko tang width, height cua the  */
 }
 
 
@@ -109,9 +109,9 @@ html {
 /* inline-block: + ko ke thua chieu ngang cua the chua no -> khoi block chi bao phan content cua no */
 /* block: khoi bao het tag chua no  */
 #nav>li {
-    /* t/c the inline-block -> ko ke thua width cua tag chua no  */
-    /* de cac tag li of header thanh 1 hang ngang  */
-    display: inline-block;
+    display: inline-block; 
+    /* inline-block: + ko ke thua chieu ngang cua the chua no -> 
+    khoi block chi bao phan content cua no */
 }
  
 
@@ -147,9 +147,9 @@ html {
     position: absolute;
     /* y(top) : height tag chua no (y=-46px) */
     top: 100%;
-    min-width: 160px;
+    min-width: 160px; /* width cua Subnav */
     /* box-shadow: x y blur spread color; */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
     background-color: #fff;
 }
 
@@ -183,6 +183,7 @@ html {
     display:none;
     padding: 0 21px;
 }
+
 #header .search-btn {
     float: right;
     padding: 0 21px;
@@ -489,7 +490,6 @@ html {
 
 .modal-close:hover {
     opacity: 1;
-    background:linear-gradient(to left,green,orange);
     color: lightseagreen;
     transition:all linear .3s;
 }
@@ -540,8 +540,6 @@ html {
 #pay-btn:hover {
     cursor: pointer;
     opacity: 0.9;
-    background:linear-gradient(to left,red,green);
-    color: lightgreen;
     transition:all linear .3s;
 }
 
@@ -559,8 +557,6 @@ html {
     border:1px solid #ddd;
 }
 .modal-footer .btn-footer:hover{
-    background: linear-gradient(to right,red,green);
-    color:lightseagreen;
     cursor:pointer;
     opacity:0.6;
     transition:all linear .3s;
